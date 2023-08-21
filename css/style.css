@@ -18,6 +18,19 @@ main hr {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
 }
 
 /* API */
@@ -29,6 +42,7 @@ a {
 .top-links {
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     height: 90px;
     border-bottom: .1rem solid rgba(128, 128, 128, 0.5) ;
@@ -44,8 +58,13 @@ a {
 }
 
 .top-links a {
+    font-family: 'Montserrat', sans-serif;
     color: black;
     text-decoration: none;
+}
+
+.top-links li a:hover {
+    text-decoration: underline;
 }
 
 #logo {
@@ -116,6 +135,11 @@ hr {
     text-align: center;
 }
 
+.colum-articles .new-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .colum-articles li {
     break-inside: avoid-column;
@@ -353,6 +377,12 @@ footer {
     padding: 0;
     list-style: none;
     text-align: center;
+}
+
+.row-articles div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sing-up {
