@@ -11,11 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-main hr {
-    margin-top: 1rem;
-    margin: 1rem 20rem 0 20rem;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -42,7 +37,6 @@ p{
 .top-links {
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
     height: 90px;
     border-bottom: .1rem solid rgba(128, 128, 128, 0.5) ;
@@ -83,27 +77,27 @@ p{
 }
 
 .first-article a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
 }
 
 #first-image {
-    width: 854px;
-    height: 533px;
+    width: 754px;
+    height: 433px;
     margin-top: 5rem;
 }
 
 .first-article h1 {
-    width: 858px;
-    height: 162px;
-    padding: 0 0.9rem 0 0.9rem;
+    padding: 0 20rem 0 20rem;
     text-align: center;
-    font-size: 54px;
+    font-size: 44px;
     line-height: 54px;
 }
 
 .first-article p {
-    height: 68px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-size: 20px;
     line-height: 34px;
@@ -111,7 +105,7 @@ p{
 
 hr {
     border: 1.5px solid rgba(0, 0, 0, 1);
-    margin: 0 15rem 0 15rem;
+    margin: 1rem 15rem 0 15rem;
 }
 
 .all-articles {
@@ -121,10 +115,10 @@ hr {
 }
 
 .all-articles h2 {
-  width: 225px;
-  height: 53px;
-  text-align: center;
-  font-size: 40px;
+    width: 225px;
+    height: 53px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .colum-articles {
@@ -270,8 +264,6 @@ footer {
 }
 
 .autor ul {
-    height: 35px;
-    width: 35px;
     margin-right: 5rem;
     display: flex;
     justify-content: center;
@@ -292,22 +284,29 @@ footer {
     width: 18px;
 }
 
-.dissertativo {
+.post {
     display: flex;
     flex-direction: column;
+
     padding: 0 10rem 0 10rem;
 }
 
-.dissertativo h1 {
+.post h1 {
     padding: 0 10rem 0 10rem;
     font-size: 32px;
 }
 
-.dissertativo p {
+.post p {
     text-align: justify;
     padding: 0 10rem 0 10rem;
     font-size: 20px;
     line-height: 34px;
+}
+
+.post div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #legenda {
@@ -357,7 +356,7 @@ footer {
 }
 
 #last-hr {
-    margin: 3.5rem 0;
+    margin: 1rem 0 3.5rem 0;
 }
 
 .read-next {
@@ -397,7 +396,7 @@ footer {
 
 .sing-up p {
     text-align: center;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem;
     margin-top: 0;
 }
 
@@ -416,4 +415,161 @@ footer {
     width: 70px;
     border: none;
     cursor: pointer;
+}
+
+#eyes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2.5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    *{
+        overflow-x: hidden;
+    }
+
+    #first-image {
+        width: 354px;
+        height: 233px;
+    }
+
+    .first-article h1 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 44px;
+        padding: 0 1rem 0 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .first-article p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    hr {
+        margin: 0rem;
+    }
+
+    .colum-articles {
+        columns: 1;
+    }
+
+    footer {
+        height: 40vh;
+    }  
+    
+    .list-footer ul {
+        display: none;
+    }
+    
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .rodape > p {
+        text-align: center;;
+        padding: 0 5rem;
+    }
+
+    #direitos {
+        padding: 0;
+    }
+
+    .article h1 {
+        padding: 0 1rem;
+        font-size: 40px;
+    }
+
+    .article p {
+        padding: 0 1rem;
+        font-size: 20px;
+    }
+
+    .article img {
+        height: 50vh;
+    }
+
+    .information {
+        margin: 0;
+    }
+
+    hr{
+        margin-top: 1rem;
+    }
+
+    .post {
+        padding: 0;
+    }
+
+    .post p {
+        padding: 0 1rem;
+    }
+
+    .post h1 {
+        padding: 0 1rem;
+    }
+
+    #legenda {
+        padding: 0;
+    }
+
+    .post div img {
+        width: 100vw;
+    }
+
+    #redes-sociais li {
+        padding: 1rem 5rem;    
+    }
+
+    .autor-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .autor-description p {
+        width: 300px;
+    }
+    
+    #last-hr {
+        margin: 1rem 0 3.5rem 0;
+    }
+
+    .row-articles {
+        columns: 1;
+    }
+
+    .sing-up {
+        margin: 0rem 1rem 3rem 1rem;
+    }
+
+    .autor ul {
+        margin-right: 0;
+        display: flex;
+        /* justify-content: center; */
+        /* list-style: none; */
+    }
+    .autor ul {
+        padding: 0 1rem 0 0.5rem;
+    }
+
+    .autor li {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .information {
+        font-size: 14px;
+    }
+
+    #dotter-hr {
+        margin: 1rem;
+    }
 }
